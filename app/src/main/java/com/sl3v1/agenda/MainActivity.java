@@ -21,12 +21,6 @@ public class MainActivity extends Activity {
         List<String> alunos = new ArrayList<>(
                 Arrays.asList("Samuel", "Deylerson", "Bruno", "Leandro", "Maria", "Ana"));
         ListView listaDeAlunos = findViewById(R.id.activity_main_listaDeAlunos);
-
-        /* Diferentemente do TextView, não existe o método setText para o ListView, o procedimento
-        * é diferente, pois não há métodos get e set. Será usado um componente intermediário que
-        * ficará responsável por coletar os dados e renderizar com a view desejada. Este componente
-        * é o Adapter*/
-
         listaDeAlunos.setAdapter(new ArrayAdapter<String>(
                 this,
                 android.R.layout.simple_list_item_1,
